@@ -6,27 +6,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./styles/style.css">
 </head>
 
 <body>
-    <header>
-
+    <header class="cabecalho">
+        <nav class="cabecalho__menu">
+            <a class="cabecalho__menu__link" href="index.html">Home</a>
+            <a class="cabecalho__menu__link" href="about.html">Sobre mim</a>
+        </nav>
     </header>
-
-    <main>
-            <h1>Eleve seu negócio digital a outro nível <strong>com um Front-end de qualidade!</strong></h1>
-
-            <p>Olá! Sou Jorge Silva, programador e desenvolvedor com especialidade em <strong>React, HTML e CSS</strong>. Ajudo pequenos negócios e designers a colocarem em prática boas ideias. Vamos conversar?</p>    
-            <a href="https://www.linkedin.com/in/jorge-lucas-381801237/">LinkedIn</a>
-            <a href="https://github.com/jorgelucasp42">GitHub</a>
-
-            <img src = "imagem.jpeg" alt="Foto do Jorge Silva de óculos escuros na frente do Palácio de Buckingham."> 
-
-
+    <main class="apresentacao">
+        <section class="apresentacao__conteudo">
+            <h1 class="apresentacao__conteudo__titulo">Jorge <strong class="titulo-destaque">Lucas P. Silva</strong></h1>
+            <p class="apresentacao__conteudo__texto">Olá! Sou Jorge Silva! Estudante de Sistemas de Informação com habilidades em C, C#, Java, JavaScript e MySQL. Gosto de resolver problemas com soluções tecnológicas e otimizar processos através de algoritmos eficientes.</p>
+         
+            <div class="apresentacao__links">
+                <h2 class="apresentacao__links__subtitulo">Acesse minhas redes</h2>
+                <a class="apresentacao__links__link" href="https://github.com/jorgelucasp42">
+                    <img src="./assets/github.png">
+                    GitHub
+                </a>
+                <a class="apresentacao__links__link" href="https://linkedin.com/in/jorge-lucas-381801237/">
+                    <img src="./assets/linkedin.png">
+                    LinkedIn
+                </a>
+                         </div>
+        </section>
+        <img class="apresentacao__imagem" src="./assets/imagem.jpeg" alt="Foto de Jorge Lucas P. Silva">
     </main>
-
-    <footer></footer>
+    <footer class="rodape">
+        <p>Desenvolvido por Jorge Lucas P. Silva.</p>
+    </footer>
 </body>
 
 </html>
