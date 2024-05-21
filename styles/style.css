@@ -177,19 +177,24 @@ body {
         gap: 20px;
     }
 
-    .apresentacao {
-        padding: 10% 5%;
-        flex-direction: column;
-        text-align: center;
-    }
+        .apresentacao {
+            padding: 5% 15%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            text-align: center;
+        }
 
     .apresentacao__conteudo {
         width: 100%;
         text-align: justify;
+        margin: 20px 0;
     }
 
     .apresentacao__imagem {
-        max-width: 100%;
+        display: block;
+        max-width: 90%;
         margin: 20px auto;  /* Centraliza a imagem */
     }
 }
