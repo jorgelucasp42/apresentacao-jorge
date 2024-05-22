@@ -17,10 +17,6 @@
     box-sizing: border-box;
 }
 
-html {
-    font-size: 16px; /* Define 1rem = 16px */
-}
-
 body {
     background-color: var(--cor-primaria);
     color: var(--cor-secundaria);
@@ -69,23 +65,26 @@ body {
     font-size: 1.0rem;
 }
 
-.apresentacao {
+.projetos {
     padding: 5% 15%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column; /* Mudança de wrap para coluna */
+    width: 100%;
+    box-sizing: border-box; /* Para incluir padding no cálculo de largura */
 }
 
-.apresentacao__conteudo {
-    max-width: 600px;
+.projetos__conteudo {
+    max-width: 1200px;
     display: flex;
     flex-direction: column;
     gap: 20px;
     text-align: justify;
+    width: 100%;
 }
 
-.apresentacao__conteudo__titulo {
+.projetos__conteudo__titulo {
     font-size: 2rem;
     font-family: var(--fonte-primaria);
 }
@@ -94,58 +93,39 @@ body {
     color: var(--cor-terciaria);
 }
 
-.apresentacao__conteudo__texto {
+.projetos__texto {
     font-size: 1rem;
 }
 
-.apresentacao__links {
+.projetos__galeria {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap;
     gap: 20px;
-}
-
-.apresentacao__links__subtitulo {
-    font-family: var(--fonte-primaria);
-    font-weight: 400;
-    font-size: 1.5rem;
-    text-align: center;
-}
-
-.apresentacao__links__link {
-    display: flex;
-    align-items: center;
     justify-content: center;
-    gap: 10px;
-    border: 2px solid var(--cor-terciaria);
     width: 100%;
+}
+
+.projeto__item {
+    flex: 1 1 300px; /* Flex-grow, flex-shrink, flex-basis */
     max-width: 300px;
-    text-align: center;
-    border-radius: 8px;
-    font-size: 1.2rem;
-    font-weight: 600;
-    padding: 10px 0;
-    text-decoration: none;
-    color: var(--cor-secundaria);
-    font-family: var(--fonte-secundaria);
-    transition: background-color 0.3s;
-}
-
-.apresentacao__links__link i {
-    font-size: 1.2rem;
-}
-
-.apresentacao__links__link:hover {
-    background-color: var(--cor-hover);
-}
-
-.apresentacao__imagem {
-    max-width: 300px;
-    width: 100%; /* Garante que a imagem ocupe 100% da largura disponível */
-    height: auto; /* Mantém a proporção da imagem */
+    background-color: #2a2a2a; /* Fundo das imagens */
     border-radius: 10px;
-    margin-top: 20px;
-    flex-shrink: 0; /* Impede que a imagem encolha */
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para destacar */
+    transition: transform 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projeto__item:hover {
+    transform: translateY(-10px); /* Efeito de levantar ao passar o mouse */
+}
+
+.projeto__imagem {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
 }
 
 .rodape {
@@ -184,50 +164,51 @@ body {
         gap: 30px;
     }
 
-    .apresentacao {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
+    .projetos {
         padding: 5% 10%;
     }
 
-    .apresentacao__conteudo {
+    .projetos__conteudo {
         width: 100%;
         text-align: justify;
         margin: 20px 0;
     }
 
-    .apresentacao__imagem {
-        max-width: 60%;
-        margin: 20px auto;
-        display: block;
+    .projetos__galeria {
+        justify-content: center;
+    }
+
+    .projeto__item {
+        max-width: 100%;
     }
 }
 
-@media (max-width: 48rem) { /* 768px / 16 = 48rem */
+@media (max-width: 48rem) {
     .cabecalho__menu {
         gap: 20px;
     }
 
-    .apresentacao {
+    .projetos {
         padding: 5% 15%;
         display: flex;
+        flex-direction: column;
         align-items: center;
-        justify-content: space-around;
-        flex-wrap: wrap;
         text-align: center;
     }
 
-    .apresentacao__conteudo {
+    .projetos__conteudo {
         width: 100%;
         text-align: justify;
         margin: 20px 0;
     }
 
-    .apresentacao__imagem {
+    .projetos__galeria {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .projeto__item {
         width: 100%;
-        display: block;
-        max-width: 60%;
-        margin: 20px auto;
+        max-width: 100%;
     }
 }

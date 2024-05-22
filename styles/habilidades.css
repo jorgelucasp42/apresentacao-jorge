@@ -68,7 +68,7 @@ body {
 .habilidades {
     padding: 5% 15%;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     flex-wrap: wrap;
 }
@@ -79,6 +79,7 @@ body {
     flex-direction: column;
     gap: 20px;
     text-align: justify;
+    flex: 1; /* Para ocupar o espaço disponível */
 }
 
 .habilidades__conteudo__titulo {
@@ -130,8 +131,11 @@ body {
 
 .habilidades__imagem {
     max-width: 300px;
+    width: 100%;
+    height: auto; /* Mantém a proporção da imagem */
     border-radius: 10px;
     margin-top: 20px;
+    flex-shrink: 0; /* Impede que a imagem encolha */
 }
 
 .rodape {
@@ -198,14 +202,13 @@ body {
     .habilidades {
         padding: 5% 15%;
         display: flex;
+        flex-direction: column;
         align-items: center;
-        justify-content: space-around;
-        flex-wrap: wrap;
         text-align: center;
     }
 
     .habilidades__conteudo {
-        width: 80%;
+        width: 100%;
         text-align: justify;
         margin: 20px 0;
     }
@@ -213,7 +216,7 @@ body {
     .habilidades__imagem {
         width: 100%;
         display: block;
-        max-width: 60%;
+        max-width: 100%;
         margin: 20px auto;
     }
 }
