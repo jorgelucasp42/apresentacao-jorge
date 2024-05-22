@@ -6,6 +6,7 @@
     --cor-terciaria: #e2894d;
     --cor-hover: #272727;
     --cor-active: #ff854ce8;
+    --cor-rodape-texto: #CCCCCC; /* Cor cinza para o texto do rodapé */
 
     --fonte-primaria: 'Krona One', sans-serif;
     --fonte-secundaria: 'Montserrat', sans-serif;
@@ -71,6 +72,7 @@ body {
     align-items: flex-start;
     justify-content: space-between;
     flex-wrap: wrap;
+    gap: 20px;
 }
 
 .habilidades__conteudo {
@@ -118,7 +120,7 @@ body {
     color: var(--cor-secundaria);
     font-family: var(--fonte-secundaria);
     transition: background-color 0.3s;
-    margin-top: 20px;
+    margin: 20px auto 0; /* Margem auto para centralizar */
 }
 
 .habilidades__certificados i {
@@ -130,21 +132,21 @@ body {
 }
 
 .habilidades__imagem {
-    max-width: 300px;
+    max-width: 340px;
     width: 100%;
-    height: auto; /* Mantém a proporção da imagem */
+    height: auto;
     border-radius: 10px;
     margin-top: 20px;
-    flex-shrink: 0; /* Impede que a imagem encolha */
+    flex-shrink: 0; 
 }
 
 .rodape {
-    color: var(--cor-secundaria);
+    color: var(--cor-rodape-texto);
     background-color: var(--cor-terciaria);
     padding: 24px;
     text-align: center;
     font-family: var(--fonte-secundaria);
-    font-size: 1.2rem;
+    font-size: 0.8rem;
     font-weight: 400;
     display: flex;
     flex-direction: column;
@@ -155,6 +157,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 5px;
 }
 
 .logo img {
@@ -164,7 +167,7 @@ body {
 }
 
 .logo p {
-    color: #fff;
+    color: #ffffff49;
     margin-top: 10px;
     text-align: center;
 }
@@ -214,7 +217,7 @@ body {
     }
 
     .habilidades__imagem {
-        width: 100%;
+        width: 80%;
         display: block;
         max-width: 100%;
         margin: 20px auto;

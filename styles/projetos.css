@@ -6,6 +6,7 @@
     --cor-terciaria: #e2894d;
     --cor-hover: #272727;
     --cor-active: #ff854ce8;
+    --cor-rodape-texto: #CCCCCC; /* Cor cinza para o texto do rodapé */
 
     --fonte-primaria: 'Krona One', sans-serif;
     --fonte-secundaria: 'Montserrat', sans-serif;
@@ -134,12 +135,12 @@ body {
 }
 
 .rodape {
-    color: var(--cor-secundaria);
+    color: var(--cor-rodape-texto); /* Cor cinza */
     background-color: var(--cor-terciaria);
     padding: 24px;
     text-align: center;
     font-family: var(--fonte-secundaria);
-    font-size: 1.2rem;
+    font-size: 0.8rem;
     font-weight: 400;
     display: flex;
     flex-direction: column;
@@ -150,6 +151,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 5px; /* Espaço entre logo e texto */
 }
 
 .logo img {
@@ -159,7 +161,7 @@ body {
 }
 
 .logo p {
-    color: #fff;
+    color: #ffffff49;
     margin-top: 10px;
     text-align: center;
 }
@@ -192,4 +194,31 @@ body {
 }
 
 @media (max-width: 48rem) {
-   
+    .cabecalho__menu {
+        gap: 20px;
+    }
+
+    .projetos {
+        padding: 5% 15%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .projetos__conteudo {
+        width: 100%;
+        text-align: justify;
+        margin: 20px 0;
+    }
+
+    .projetos__galeria {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .projeto__item {
+        width: 100%;
+        max-width: 100%;
+    }
+}
