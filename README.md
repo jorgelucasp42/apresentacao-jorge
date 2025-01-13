@@ -1,6 +1,6 @@
 # Apresentação de Jorge Lucas P. Silva
 
-Bem-vindo à minha apresentação online! Este projeto foi desenvolvido para apresentar minhas habilidades, projetos e experiências na área de desenvolvimento de software.
+Bem-vindo à minha apresentação online! Este projeto foi desenvolvido para apresentar minhas habilidades, projetos e experiências na área de desenvolvimento de software, inicialmente no Programa Trilhas da SECTI/MA em 2024, e posteriormente modificado em 2025 para apresentação de trabalho para a disciplina de Linguagem de Programação WEB do Curso de Sistemas de Informação do Instituto Federal do Maranhão.
 
 ## Visão Geral
 
