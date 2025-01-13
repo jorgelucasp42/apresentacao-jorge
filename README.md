@@ -28,7 +28,7 @@ Este site é composto por três páginas principais:
 
 O projeto está hospedado no Vercel.
 Você pode acessar o site publicado através do seguinte link: 
-https://apresentacao-jorge-silva.vercel.app/projetos.html
+https://apresentacao-jorge-silva.vercel.app
 
 ## Contato
 Para mais informações ou dúvidas, entre em contato comigo através do LinkedIn.
