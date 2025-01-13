@@ -1,0 +1,41 @@
+@import url('./base.css');
+
+:root {
+    --cor-primaria: #2c2c2c; /* Cinza escuro */
+    
+}
+
+.contato {
+    padding: 5% 15%;
+    text-align: center;
+    background-color: var(--cor-primaria);
+}
+
+.contato h1 {
+    font-size: 2rem;
+    font-family: var(--fonte-primaria);
+    color: var(--cor-terciaria);
+    margin-bottom: 20px;
+}
+
+address {
+    font-style: normal;
+    line-height: 1.8;
+    text-align: center;
+    margin-top: 20px;
+}
+
+address p {
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+address a {
+    color: var(--cor-terciaria);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+address a:hover {
+    text-decoration: underline;
+}
