@@ -6,9 +6,9 @@ Bem-vindo à minha apresentação online! Este projeto foi desenvolvido para apr
 
 Este site é composto por três páginas principais:
 
-1. **Home**: Introdução sobre quem sou eu.
-2. **Habilidades**: Descrição das minhas habilidades e certificações.
-3. **Projetos**: Galeria de projetos que desenvolvi.
+1. **Home (Quem Somos)**: Introdução sobre quem sou eu.
+2. **Habilidades (Currículo)**: Descrição das minhas habilidades e certificações.
+3. **Projetos (Portfólio)**: Galeria de projetos que desenvolvi.
 
 ## Tecnologias Utilizadas
 
